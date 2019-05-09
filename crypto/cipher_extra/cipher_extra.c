@@ -131,6 +131,8 @@ const EVP_CIPHER *EVP_get_cipherbyname(const char *name) {
     return EVP_aes_192_ofb();
   } else if (OPENSSL_strcasecmp(name, "aes-256-ofb") == 0) {
     return EVP_aes_256_ofb();
+  } else if (OPENSSL_strcasecmp(name, "sm4-cbc") == 0) {
+    return EVP_sm4_cbc();
   }
 
   return NULL;
