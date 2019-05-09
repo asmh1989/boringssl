@@ -19,6 +19,7 @@ add_library(
 
   e_null.c
   e_rc2.c
+  e_sm4.c
   e_rc4.c
   e_aesgcmsiv.c
   e_aesctrhmac.c

@@ -256,6 +256,24 @@ extern "C" {
 #define NID_rc2_cbc 37
 #define OBJ_rc2_cbc 1L, 2L, 840L, 113549L, 3L, 2L
 
+#define SN_ISO_CN               "ISO-CN"
+#define LN_ISO_CN               "ISO CN Member Body"
+#define NID_ISO_CN              1140
+#define OBJ_ISO_CN              OBJ_member_body,156L
+
+#define SN_oscca                "oscca"
+#define NID_oscca               1141
+#define OBJ_oscca               OBJ_ISO_CN,10197L
+
+#define SN_sm_scheme            "sm-scheme"
+#define NID_sm_scheme           1142
+#define OBJ_sm_scheme           OBJ_oscca,1L
+
+#define SN_sm4_cbc              "SM4-CBC"
+#define LN_sm4_cbc              "sm4-cbc"
+#define NID_sm4_cbc             1134
+#define OBJ_sm4_cbc             OBJ_sm_scheme,104L,2L
+
 #define SN_rc2_ecb "RC2-ECB"
 #define LN_rc2_ecb "rc2-ecb"
 #define NID_rc2_ecb 38
